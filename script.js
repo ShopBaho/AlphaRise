@@ -1,17 +1,23 @@
-// اسکریپت برای ظاهر شدن المان‌ها هنگام اسکرول
-window.addEventListener('scroll', reveal);
+// Wait for DOM to load
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Loading Animation
+    const loader = document.querySelector('.loader');
+    setTimeout(() => {
+        loader.classList.add('hidden');
+    }, 2000);
 
-function reveal() {
-    var reveals = document.querySelectorAll('.card');
-
-    for (var i = 0; i < reveals.length; i++) {
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
-
-        if (revealtop < windowheight - revealpoint) {
-            reveals[i].style.opacity = '1';
-            reveals[i].style.transform = 'translateY(0)';
-        }
+    // Menu Toggle for Mobile
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            menuToggle.innerHTML = navLinks.classList.contains('active') 
+                ? '<i class="fas fa-times"></i>' 
+                : '<i class="fas fa-bars"></i>';
+        });
     }
-}
+
+    // Close mobile
