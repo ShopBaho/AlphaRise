@@ -212,7 +212,6 @@ body {
     color: var(--primary);
 }
 
-𓍼‌‌𝙊𝙈𝙄𝘿𝘽𝘼𝙃𝘼𓍼, [12/12/2025 1:38 AM]
 /* Hero Section */
 .hero {
     min-height: 100vh;
@@ -415,7 +414,7 @@ section {
 .tech-stats {
     display: flex;
 
-𓍼‌‌𝙊𝙈𝙄𝘿𝘽𝘼𝙃𝘼𓍼, [12/12/2025 1:38 AM]
+
 justify-content: space-between;
     margin-top: 20px;
     padding-top: 20px;
@@ -646,7 +645,6 @@ footer {
 .creator p {
     display: flex;
 
-𓍼‌‌𝙊𝙈𝙄𝘿𝘽𝘼𝙃𝘼𓍼, [12/12/2025 1:38 AM]
 align-items: center;
     gap: 10px;
     margin-bottom: 10px;
@@ -778,3 +776,4 @@ align-items: center;
     .cta-button { padding: 12px 30px; }
     .footer-bottom { flex-direction: column; text-align: center; }
 }
+
